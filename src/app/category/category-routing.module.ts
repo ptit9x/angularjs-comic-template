@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
 import { Shell } from '../shell/shell.service';
+import { CategoryComponent } from './category.component';
 
 const routes: Routes = [
-  Shell.childRoutes([
-    // { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '', component: HomeComponent }
-  ])
+  Shell.childRoutes([{ path: 'category', component: CategoryComponent, data: { title: 'Category' } }])
 ];
 
 @NgModule({
@@ -16,4 +13,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class HomeRoutingModule {}
+export class CategoryRoutingModule { }

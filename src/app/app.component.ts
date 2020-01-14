@@ -1,8 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { Title } from '@angular/platform-browser';
-import { merge } from 'rxjs';
-import { filter, map, switchMap } from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +8,7 @@ import { filter, map, switchMap } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   constructor(
-    private router: Router,
     private activatedRoute: ActivatedRoute,
-    private titleService: Title
   ) {}
 
   ngOnInit() {

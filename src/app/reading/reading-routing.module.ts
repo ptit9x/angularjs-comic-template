@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { Shell } from '../shell/shell.service';
-import { AboutComponent } from './about.component';
+import { ReadingComponent } from './reading.component';
 
 const routes: Routes = [
-  Shell.childRoutes([{ path: 'about', component: AboutComponent, data: { title: 'About' } }])
+  Shell.childRoutes([{ path: 'reading', component: ReadingComponent, data: { title: 'Book' } }])
 ];
 
 @NgModule({
@@ -13,4 +13,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class AboutRoutingModule {}
+export class ReadingRoutingModule {}

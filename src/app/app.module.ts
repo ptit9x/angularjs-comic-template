@@ -9,7 +9,9 @@ import { ShellModule } from './shell/shell.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
-import { AboutModule } from './about/about.module';
+import { CategoryModule } from './category/category.module';
+import { BookModule } from './book/book.module';
+import { ReadingModule } from './reading/reading.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AboutModule } from './about/about.module';
     SharedModule,
     ShellModule,
     HomeModule,
-    AboutModule,
+    CategoryModule,
+    BookModule,
+    ReadingModule,
     AppRoutingModule
   ],
   providers: [],
