@@ -1,0 +1,134 @@
+.manga-title-badges {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 8px;
+  line-height: 26px;
+  font-weight: 600;
+  text-align: center;
+  float: left;
+  margin: 7px 7px 0 0;
+  color: #fff;
+  transform: rotate(-10deg);
+  .new {
+    background-color: #37b7da;
+  }
+  .hot {
+    background-color: #eb3349;
+  }
+}
+
+.manga-title-badges.top1 {
+  background-color: #eb3349;
+}
+.manga-title-badges.top2 {
+  background-color: #3498db;
+}
+.manga-title-badges.top3 {
+  background-color: #27ae60;
+}
+.manga-title-badges.other {
+  background-color: #3b3b3b;
+}
+
+.manga-title-badges.custom {
+  background-color: #eb3349;
+  transform: rotate(0deg);
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+  padding: 10px 8px 10px 8px;
+  text-transform: uppercase;
+  line-height: 5px;
+  font-size: 10px;
+}
+
+.box-book-chart .book-chart {
+  margin: 10px 0 0 0;
+}
+.book-chart ul {
+  overflow: hidden;
+}
+.book-chart ul li {
+  overflow: hidden;
+  margin: 0 0 15px 0;
+}
+.book-chart ul li .img-left {
+  float: left;
+  width: 60px;
+  margin-right: 10px;
+}
+.book-chart ul li .box-absolute {
+  position: relative;
+  width: 60px;
+  height: 89px;
+}
+.book-chart ul li .item-mask-bg {
+  display: none;
+}
+.book-chart ul li .box-absolute:hover .item-mask-bg {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.book-chart ul li .box-absolute .img {
+  position: absolute;
+  width: 60px;
+  height: 89px;
+}
+.book-chart ul li .box-absolute .img img {
+  float: left;
+  width: 60px;
+  height: 89px;
+}
+.book-chart ul li .box-book-info {
+  float: left;
+  width: 150px;
+}
+.book-chart ul li .box-book-info h3 {
+  float: left;
+  width: 100%;
+  padding: 0px 0 3px 0;
+}
+.book-chart ul li .box-book-info h3 .name-book {
+  font-size: 13px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box !important;
+  line-height: 18px;
+  max-height: 36px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
+.book-chart ul li .box-book-info .show-author {
+  float: left;
+  width: 100%;
+  padding: 0px 0 0 0;
+  margin-bottom: 5px;
+}
+.book-chart ul li .box-book-info .list-chapter {
+  float: left;
+  width: 100%;
+}
+.book-chart ul li .box-book-info .list-chapter .item-chapter {
+  float: left;
+  width: 100%;
+  margin: 5px 0;
+}
+.book-chart ul li .box-book-info .list-chapter .item-chapter a {
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 200ms ease;
+  transition: border-color 200ms ease;
+  margin-right: 10px;
+}

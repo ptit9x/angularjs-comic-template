@@ -1,0 +1,31 @@
+<div class="box-book-chart">
+  <div class="tile-main-title">
+    <div class="box-icon"> <i class="truyenn-icon-eye"></i> </div>
+    <div class="box-txt-show">
+      <h2>{{topViews.title}}</h2>
+    </div>
+  </div>
+  <div class="book-chart">
+    <ul>
+      <li *ngFor="let item of topViews.data, let i=index">
+        <span [ngClass]="['manga-title-badges', i < 3 ? 'top'+(i+1): 'other' ]">{{i+1}}</span>
+        <a [routerLink]="item.url" class="img-left" [title]="item.title">
+          <div [ngClass]="[i < 3 ? 'box-absolute fn-shadow' : 'hide']">
+            <div class="img">
+              <img class="lozad" [title]="item.title" [alt]="item.title" [src]="item.image" data-loaded="true" />
+            </div>
+          </div>
+        </a>
+        <div [ngClass]="['box-book-info', i < 3 ? '' : 'full-w']">
+          <h3 class="font-title">
+            <a [routerLink]="item.url" class="name-book ellipsis-1" [title]="item.title">{{item.title}}</a>
+          </h3>
+          <h4 class="show-author">
+            <a [routerLink]="item.authorUrl" class="name-author ellipsis-1" [title]="item.authorTitle">{{ item.author }}</a>
+          </h4>
+          <span class="label-full" *ngIf="item.fullLabel">{{item.fullLabel}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

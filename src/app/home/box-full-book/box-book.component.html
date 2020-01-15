@@ -10,7 +10,7 @@
       <div class="box-full-book">
         <ul class="box-subject-book">
           <li *ngFor="let item of data">
-            <a [href]="item.url" class="img-left" [title]="item.title">
+            <a [routerLink]="item.url" class="img-left" [title]="item.title">
               <div class="box-absolute fn-shadow">
                 <div class="img">
                   <img class="lozad" [title]="item.title" [alt]="item.title" [src]="item.image" />
@@ -19,12 +19,12 @@
             </a>
             <div class="box-book-info">
               <h3 class="font-title">
-                <a [href]="item.url" class="name-book ellipsis-1" [title]="item.title">{{item.title}}</a>
+                <a [routerLink]="item.url" class="name-book ellipsis-1" [title]="item.title">{{item.title}}</a>
               </h3>
               <h4 class="show-author">
-                <a [href]="item.authorUrl" class="name-author ellipsis-1"
-                  [title]="item.authorTitle">{{ item.author }}</a>
+                <a [routerLink]="item.authorUrl" class="name-author ellipsis-1" [title]="item.authorTitle">{{ item.author }}</a>
               </h4>
+              <span class="label-full" *ngIf="item.fullLabel">{{item.fullLabel}}</span>
             </div>
           </li>
         </ul>

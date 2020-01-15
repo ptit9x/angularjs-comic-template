@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
-  selector: 'app-box-top',
-  templateUrl: './box-top.component.html',
-  styleUrls: ['./box-top.component.scss']
+  selector: 'app-box-full-book',
+  templateUrl: './box-book.component.html',
+  styleUrls: ['./box-book.component.scss']
 })
-export class BoxTopComponent implements OnInit {
+export class BoxFullBookComponent implements OnInit {
   @Input() title: string;
   @Input() data: [];
 

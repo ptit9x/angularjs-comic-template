@@ -1,0 +1,90 @@
+.box-full-book {
+  overflow: hidden;
+  margin: 20px 0;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    li {
+      .img-left {
+        float: left;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      .box-absolute {
+        float: left;
+        width: 100%;
+      }
+      .item-mask-bg {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+      .box-book-info {
+        h3 {
+          float: left;
+          width: 100%;
+          padding: 0px 0 3px 0;
+        }
+        .show-author {
+          float: left;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+.box-full-book ul li .box-book-info .label-full {
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 400;
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  -webkit-transition: border-color 200ms ease;
+  -moz-transition: border-color 200ms ease;
+  -o-transition: border-color 200ms ease;
+  transition: border-color 200ms ease;
+  margin-right: 10px;
+  color: #ffffff;
+  background: #bb3129;
+  text-decoration: none !important;
+}
+
+@media (max-width: 1199px) {
+  .box-full-book {
+    overflow-x: scroll;
+    margin-bottom: 30px;
+    margin: auto;
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+  }
+  .box-full-book ul {
+    display: grid;
+    grid-gap: 10px 15px;
+    -ms-grid-columns: (100px);
+    grid-template-columns: repeat(20, 100px);
+    -ms-grid-rows: 240px;
+    grid-template-rows: 240px;
+    grid-auto-flow: column;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .box-full-book ul.box-subject-book {
+    -ms-grid-rows: unset !important;
+    grid-template-rows: unset !important;
+  }
+  .box-full-book ul li .box-book-info .label-full {
+    font-size: 11px;
+    width: 100%;
+    padding: 5px 0;
+    background: none;
+    color: #bb3129;
+  }
+}

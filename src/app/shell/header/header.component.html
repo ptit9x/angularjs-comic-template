@@ -1,133 +1,43 @@
 <div class="header" id="bodyread">
   <div class="wrap">
     <div class="container">
-      <a href="/" class="box-logo" title="Đọc truyện online, truyện gì cũng có">
-        <img src="assets/images/truyennhieu-logo.svg" class="img-svg" title="Đọc truyện online, truyện gì cũng có" alt="Đọc truyện online, truyện gì cũng có" />
+      <a [routerLink]="'/'" class="box-logo" title="Đọc truyện online, truyện gì cũng có">
+        <img src="assets/images/truyennhieu-logo.svg" class="img-svg" title="Đọc truyện online, truyện gì cũng có"
+          alt="Đọc truyện online, truyện gì cũng có" />
       </a>
       <div class="navbar-menu">
         <ul class="left-menu mainmenu">
-          <li class="active"><a href="/" rel="dofollow" title="Trang chủ"><span class="icon-home"></span></a></li>
-          <li class=""><a href="#" rel="dofollow" title="Thể loại">Thể loại</a>
-            <div class="mainmenu-topbar hide" style="display: none;">
+          <li class="active"><a [routerLink]="'/'" rel="dofollow" title="Trang chủ"><span class="icon-home"></span></a></li>
+          <li>
+            <a title="Thể loại">Thể loại</a>
+            <div class="mainmenu-topbar hide">
               <div class="main-menu-more">
                 <div class="menu-show-full-cate">
                   <ul class="list-menu">
-                    <li><a href="/the-loai/" title="Tất cả truyện">Tất cả</a></li>
-
-                    <li><a href="/the-loai/tien-hiep/5bdec66306c7c41b7eea0fe4" title="Truyện Tiên Hiệp">Tiên Hiệp</a>
+                    <li *ngFor="let item of menus">
+                      <a [routerLink]="item.url" [title]="item.name">{{item.name}}</a>
                     </li>
-
-                    <li><a href="/the-loai/kiem-hiep/5be109e6b22428286417369f" title="Truyện Kiếm Hiệp">Kiếm Hiệp</a>
-                    </li>
-
-                    <li><a href="/the-loai/ngon-tinh/5bdec27dc551731a60abe1ff" title="Truyện Ngôn Tình">Ngôn Tình</a>
-                    </li>
-
-                    <li><a href="/the-loai/do-thi/5bdec27dc551731a60abe201" title="Truyện Đô Thị">Đô Thị</a></li>
-
-                    <li><a href="/the-loai/quan-truong/5be6a6689d614d46ffa68d92" title="Truyện Quan Trường">Quan
-                        Trường</a></li>
-
-                    <li><a href="/the-loai/vong-du/5bdf022606c7c41b7eea55c0" title="Truyện Võng Du">Võng Du</a></li>
-
-                    <li><a href="/the-loai/khoa-huyen/5bdf18bc06c7c41b7eea8070" title="Truyện Khoa Huyễn">Khoa Huyễn</a>
-                    </li>
-
-                    <li><a href="/the-loai/huyen-huyen/5bdecab406c7c41b7eea20b9" title="Truyện Huyền Huyễn">Huyền
-                        Huyễn</a></li>
-
-                    <li><a href="/the-loai/di-gioi/5bdecab406c7c41b7eea20b6" title="Truyện Dị Giới">Dị Giới</a></li>
-
-                    <li><a href="/the-loai/di-nang/5be1c56b1b07282cdf88e775" title="Truyện Dị Năng">Dị Năng</a></li>
-
-                    <li><a href="/the-loai/quan-su/5be67f9e9d614d46ffa63eb4" title="Truyện Quân Sự">Quân Sự</a></li>
-
-                    <li><a href="/the-loai/lich-su/5be1b09ee2f0522ba9218079" title="Truyện Lịch Sử">Lịch Sử</a></li>
-
-                    <li><a href="/the-loai/xuyen-khong/5bdecab406c7c41b7eea20b8" title="Truyện Xuyên Không">Xuyên
-                        Không</a></li>
-
-                    <li><a href="/the-loai/trong-sinh/5bdfb00f8ee5f91f329931cc" title="Truyện Trọng Sinh">Trọng Sinh</a>
-                    </li>
-
-                    <li><a href="/the-loai/trinh-tham/5be268277f0e2b2fdfe6461c" title="Truyện Trinh Thám">Trinh Thám</a>
-                    </li>
-
-                    <li><a href="/the-loai/tham-hiem/5be25add7f0e2b2fdfe62c1b" title="Truyện Thám Hiểm">Thám Hiểm</a>
-                    </li>
-
-                    <li><a href="/the-loai/linh-di/5be2af29ea81db31673b318f" title="Truyện Linh Dị">Linh Dị</a></li>
-
-                    <li><a href="/the-loai/sac/5be10a0ab2242828641736e8" title="Truyện Sắc">Sắc</a></li>
-
-                    <li><a href="/the-loai/nguoc/5be1bbf9e2f0522ba92180d5" title="Truyện Ngược">Ngược</a></li>
-
-                    <li><a href="/the-loai/sung/5bdec66306c7c41b7eea0fe8" title="Truyện Sủng">Sủng</a></li>
-
-                    <li><a href="/the-loai/cung-dau/5be3b84d6e8d9936a27d6602" title="Truyện Cung Đấu">Cung Đấu</a></li>
-
-                    <li><a href="/the-loai/nu-cuong/5be1be3ce2f0522ba9218544" title="Truyện Nữ Cường">Nữ Cường</a></li>
-
-                    <li><a href="/the-loai/gia-dau/5be2639f7f0e2b2fdfe63d31" title="Truyện Gia Đấu">Gia Đấu</a></li>
-
-                    <li><a href="/the-loai/dong-phuong/5be679bc9d614d46ffa62b08" title="Truyện Đông Phương">Đông
-                        Phương</a></li>
-
-                    <li><a href="/the-loai/dam-my/5bdf162c06c7c41b7eea7b78" title="Truyện Đam Mỹ">Đam Mỹ</a></li>
-
-                    <li><a href="/the-loai/bach-hop/5be7208e5ce85f4bc1f4ca89" title="Truyện Bách Hợp">Bách Hợp</a></li>
-
-                    <li><a href="/the-loai/hai-huoc/5bdec66306c7c41b7eea0fe6" title="Truyện Hài Hước">Hài Hước</a></li>
-
-                    <li><a href="/the-loai/dien-van/5be266f47f0e2b2fdfe643b9" title="Truyện Điền Văn">Điền Văn</a></li>
-
-                    <li><a href="/the-loai/co-dai/5be10a3ab224282864173745" title="Truyện Cổ Đại">Cổ Đại</a></li>
-
-                    <li><a href="/the-loai/mat-the/5be267aa7f0e2b2fdfe64523" title="Truyện Mạt Thế">Mạt Thế</a></li>
-
-                    <li><a href="/the-loai/truyen-teen/5bdefffe06c7c41b7eea519b" title="Truyện Truyện Teen">Truyện
-                        Teen</a></li>
-
-                    <li><a href="/the-loai/phuong-tay/5be1d1492b9b392d52d2ff68" title="Truyện Phương Tây">Phương Tây</a>
-                    </li>
-
-                    <li><a href="/the-loai/nu-phu/5be681599d614d46ffa64213" title="Truyện Nữ Phụ">Nữ Phụ</a></li>
-
-                    <li><a href="/the-loai/light-novel/5be7bd9e5ce85f4bc1f513c7" title="Truyện Light Novel">Light
-                        Novel</a></li>
-
-                    <li><a href="/the-loai/viet-nam/5be1b09ee2f0522ba9218078" title="Truyện Việt Nam">Việt Nam</a></li>
-
-                    <li><a href="/the-loai/doan-van/5be686be9d614d46ffa64cae" title="Truyện Đoản Văn">Đoản Văn</a></li>
-
-                    <li><a href="/the-loai/khac/5be68b279d614d46ffa65726" title="Truyện Khác">Khác</a></li>
-
                   </ul>
                 </div>
               </div>
             </div>
           </li>
-
-          <li class="">
-            <a href="/category" rel="dofollow" title="Kiếm Hiệp">Kiếm Hiệp</a>
+          <li>
+            <a [routerLink]="'/category'" rel="dofollow" title="Kiếm Hiệp">Kiếm Hiệp</a>
           </li>
-
-          <li class="">
-            <a href="/book" rel="dofollow" title="Ngôn Tình">Ngôn Tình</a>
+          <li>
+            <a [routerLink]="'/book'" rel="dofollow" title="Ngôn Tình">Ngôn Tình</a>
           </li>
-
-
         </ul>
       </div>
-      <a href="#" onclick="showSearchBar()" class="btn-search-icon" style="display: none;"></a>
-      <div class="fun_search" id="fun_search" style="display: unset;">
+      <a (click)="showSearchBar()" class="btn-search-icon"
+        [ngStyle]="{'display': displaySearchBar ? 'none' : 'unset' }"></a>
+      <div class="fun_search" id="fun_search" [ngStyle]="{'display': displaySearchBar ? 'unset' : '' }">
         <div class="box-input">
-          <input id="txtSearch" type="text" class="i-search" value="Nhập tên sách hoặc tác giả"
-            onkeypress="return keywordPressed(event)"
-            onfocus="if (this.value == 'Nhập tên sách hoặc tác giả') {this.value = ''; }">
+          <input id="txtSearch" type="text" class="i-search" value="" placeholder="Nhập tên sách hoặc tác giả" />
         </div>
-        <a class="b-search" onclick="submitSearch()" title="Tìm kiếm"></a>
-        <a onclick="hideSearchBar()" class="btn-txt-cancel-search" title="Hủy search" rel="nofollow">Hủy</a>
+        <a class="b-search" (click)="onSubmitSearch()" title="Tìm kiếm"></a>
+        <a (click)="hideSearchBar()" class="btn-txt-cancel-search" title="Hủy search" rel="nofollow">Hủy</a>
       </div>
     </div>
   </div>

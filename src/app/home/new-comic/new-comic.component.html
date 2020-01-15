@@ -1,0 +1,42 @@
+<div class="tile-main-title">
+  <div class="box-icon"> <i class="truyenn-icon-star-full"></i> </div>
+  <div class="box-txt-show">
+    <h2>Truyện mới cập nhật</h2>
+  </div>
+  <div class="right-slect-field">
+    <div class="custom-select-wrapper">
+      <select name="sources" id="updateSources" class="custom-select sources" placeholder="Tất cả">
+        <option value="">Tất cả</option>
+        <option value="5be686be9d614d46ffa64cae">Đoản Văn</option>
+        <option value="5be68b279d614d46ffa65726">Khác</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="box-book-update">
+  <ul>
+    <li *ngFor="let item of newComics">
+      <a [routerLink]="item.url" class="img-left" [title]="item.title">
+        <div class="box-absolute fn-shadow">
+          <div class="img">
+            <img class="lozad" [title]="item.title" [alt]="item.title" [src]="item.image" />
+          </div>
+        </div>
+      </a>
+      <div class="box-book-info">
+        <h3 class="font-title ellipsis-1">
+          <a [routerLink]="item.url" class="name-book ellipsis-1" [title]="item.title">{{item.title}}</a>
+        </h3>
+        <h4 class="show-author">
+          <a [routerLink]="item.authorUrl" class="name-author ellipsis-1" [title]="item.authorTitle">{{ item.author }}</a>
+        </h4>
+        <div class="list-chapter">
+          <div *ngFor="let v of item.chapters" class="item-chapter">
+            <a [routerLink]="v.link" class="name-chapter ellipsis-1">{{v.name}}</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>
