@@ -1,6 +1,6 @@
 import { Routes, Route } from '@angular/router';
 
-import { ShellComponent } from './shell.component';
+import { FullComponent, NoFooterComponent } from './layouts';
 
 /**
  * Provides helper methods to create routes.
@@ -14,9 +14,18 @@ export class Shell {
   static childRoutes(routes: Routes): Route {
     return {
       path: '',
-      component: ShellComponent,
+      component: FullComponent,
       children: routes,
-      // Reuse ShellComponent instance when navigating between child views
+      // Reuse FullComponent instance when navigating between child views
+      data: { reuse: true }
+    };
+  }
+  static childReadingRoutes(routes: Routes): Route {
+    return {
+      path: '',
+      component: NoFooterComponent,
+      children: routes,
+      // Reuse NoFooterComponent instance when navigating between child views
       data: { reuse: true }
     };
   }

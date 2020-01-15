@@ -12,6 +12,7 @@ import { HomeModule } from './home/home.module';
 import { CategoryModule } from './category/category.module';
 import { BookModule } from './book/book.module';
 import { ReadingModule } from './reading/reading.module';
+import { NotFoundModule } from './404/not-found.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ReadingModule } from './reading/reading.module';
     CategoryModule,
     BookModule,
     ReadingModule,
+    NotFoundModule,
     AppRoutingModule
   ],
   providers: [],

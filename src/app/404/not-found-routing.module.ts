@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
 import { Shell } from '../shell/shell.service';
+import { NotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
-  Shell.childRoutes([
-    { path: '', component: HomeComponent }
-  ])
+  Shell.childRoutes([{ path: '**', component: NotFoundComponent, data: { title: 'Not Found' } }])
 ];
 
 @NgModule({
@@ -15,4 +13,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class HomeRoutingModule {}
+export class NotFoundRoutingModule {}
