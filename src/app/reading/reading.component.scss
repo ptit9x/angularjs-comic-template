@@ -466,11 +466,8 @@
   border-right: #d8d8d8 solid 1px;
   font-size: 14px;
   width: 33.33%;
-  float: left;
   height: 58px;
   color: #212121;
-}
-.reading .chapter-control a.btn-chapter-pre {
 }
 .reading .chapter-control .link-main-title {
   float: left;
@@ -611,8 +608,7 @@ a.btn-setting.active:hover {
 }
 
 .style-white {
-  background: url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/basic_bg.st1.png")
-    repeat;
+  background: url("../../assets/images/basic_bg.st1.png") repeat;
 }
 .style-white .reading-des {
   background: #fff;
@@ -626,13 +622,10 @@ a.btn-setting.active:hover {
   background: #c4c4c4;
 }
 .style-graygold {
-  background: #e0ce9e
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/body_base_bg.st2.png")
-    repeat;
+  background: #e0ce9e url("../../assets/images/body_base_bg.st2.png") repeat;
 }
 .style-graygold .reading-des {
-  background: #f3e9c6
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/basic_bg.st2.png") repeat;
+  background: #f3e9c6 url("../../assets/images/basic_bg.st2.png") repeat;
   border: 1px solid #ddc596;
 }
 .style-graygold .reading-des .prelative {
@@ -642,24 +635,18 @@ a.btn-setting.active:hover {
   background: #c1bbb6;
 }
 .style-graygold .right-show-fun .read-popup-chapter {
-  background: #f3e9c6
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747179/truyennhieu/images/theme/noise-y_2x.7fb10.png")
-    repeat !important;
+  background: #f3e9c6 url("../../assets/images/noise-y_2x.7fb10.png") repeat !important;
 }
 .style-graygold .right-show-fun {
   border-left: 1px solid #d9cfb3;
   border-left-color: #e6dfcd;
-  background: url("https://res.cloudinary.com/tncdn11/image/upload/v1573747179/truyennhieu/images/theme/noise-y_2x.7fb10.png")
-    repeat;
+  background: url("../../assets/images/noise-y_2x.7fb10.png") repeat;
 }
 .style-graygold .right-show-fun .read-popup-control {
-  background: #f3e9c6
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747179/truyennhieu/images/theme/noise-y_2x.7fb10.png")
-    repeat !important;
+  background: #f3e9c6 url("../../assets/images/noise-y_2x.7fb10.png") repeat !important;
 }
 .style-graygold .right-show-fun .read-popup-chapter .list-item-chapter {
-  background: url("https://res.cloudinary.com/tncdn11/image/upload/v1573747179/truyennhieu/images/theme/noise-y_2x.7fb10.png")
-    repeat;
+  background: url("../../assets/images/noise-y_2x.7fb10.png") repeat;
 }
 .style-graygold .right-show-fun .read-popup-chapter .list-item-chapter ul li a:hover {
   text-decoration: underline !important;
@@ -676,8 +663,7 @@ a.btn-setting.active:hover {
   color: #9f224e;
 }
 .style-graygold .fun_search_chapter {
-  background: url("https://res.cloudinary.com/tncdn11/image/upload/v1573747179/truyennhieu/images/theme/noise-y_2x.7fb10.png")
-    repeat;
+  background: url("../../assets/images/noise-y_2x.7fb10.png") repeat;
 }
 .style-graygold .fun_search_chapter .box-input .i-search {
   background: none;
@@ -700,13 +686,10 @@ a.btn-setting.active:hover {
 }
 
 .style-dark {
-  background: #0f1112
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/body_base_bg.st7.png")
-    repeat;
+  background: #0f1112 url("../../assets/images/body_base_bg.st7.png") repeat;
 }
 .style-dark .reading-des {
-  background: #1f2129
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/basic_bg.st7.png") repeat;
+  background: #1f2129 url("../../assets/images/basic_bg.st7.png") repeat;
   color: #83848f;
   border: 1px solid #444;
 }
@@ -839,7 +822,7 @@ a.btn-setting.active:hover {
   float: left;
   width: 100%;
   padding: 20px 0 0 0;
-  line-height: 1.6; /*-- -webkit-touch-callout: none;  -webkit-user-select: none;  -khtml-user-select: none;   -moz-user-select: none;   -ms-user-select: none;    user-select: none; */
+  line-height: 1.6;
 }
 .content-des-info p {
   line-height: 1.6;
@@ -920,7 +903,6 @@ a.btn-setting.active:hover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  float: right;
 }
 .box-bottom-fun a.btn-report:hover {
   background: rgba(0, 0, 0, 0.1);
@@ -1064,19 +1046,13 @@ body.w1280 .readcontent .top-page-right {
 }
 
 .linkBgColor.style-white-btn {
-  background: #ede7da
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747179/truyennhieu/images/theme/body_base_bg.st1.png")
-    repeat;
+  background: #ede7da url("../../assets/images/body_base_bg.st1.png") repeat;
 }
 .linkBgColor.style-graygold-btn {
-  background: #e0ce9e
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/body_base_bg.st2.png")
-    repeat;
+  background: #e0ce9e url("../../assets/images/body_base_bg.st2.png") repeat;
 }
 .linkBgColor.style-dark-btn {
-  background: #0f1112
-    url("https://res.cloudinary.com/tncdn11/image/upload/v1573747180/truyennhieu/images/theme/body_base_bg.st7.png")
-    repeat;
+  background: #0f1112 url("../../assets/images/body_base_bg.st7.png") repeat;
   text-align: center;
 }
 .linkBgColor.style-dark-btn:before {

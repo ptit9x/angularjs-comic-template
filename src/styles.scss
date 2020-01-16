@@ -1659,14 +1659,11 @@ body .wrap .container {
 
 @font-face {
   font-family: "truyenn";
-  src: url("https://res.cloudinary.com/tncdn11/raw/upload/v1573746239/truyennhieu/fonts/truyenn.eot?opyrj1");
-  src: url("https://res.cloudinary.com/tncdn11/raw/upload/v1573746239/truyennhieu/fonts/truyenn.eot?opyrj1#iefix")
-      format("embedded-opentype"),
-    url("https://res.cloudinary.com/tncdn11/raw/upload/v1573746240/truyennhieu/fonts/truyenn.ttf?opyrj1")
-      format("truetype"),
-    url("https://res.cloudinary.com/tncdn11/raw/upload/v1573746240/truyennhieu/fonts/truyenn.woff?opyrj1")
-      format("woff"),
-    url("https://truyennhieu.com/fonts/truyenn.svg?opyrj1#truyenn") format("svg");
+  src: url('./assets/fonts/truyenn.eot');
+  src: local('truyenn');
+  src: url('./assets/fonts/truyenn.eot') format('embedded-opentype');
+  src: url('./assets/fonts/truyenn.ttf') format('truetype');
+  src: url('./assets/fonts/truyenn.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
