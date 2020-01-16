@@ -1,0 +1,56 @@
+.box-content-des-info {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  .box-show-des {
+    max-height: 180px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    p {
+      float: left;
+      width: 100%;
+      margin-bottom: 12px;
+      line-height: 24px;
+    }
+  }
+  .box-show-des:after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff);
+    position: absolute;
+    bottom: -15px;
+    height: 40px;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+}
+.c-content-readmore {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  .content-readmore {
+    color: #bb3129;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .content-readmore:after {
+    font-family: "truyenn";
+    content: "\e906";
+    font-size: 15px;
+    margin-left: 5px;
+    display: inline-block;
+  }
+}

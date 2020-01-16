@@ -1,0 +1,40 @@
+.detail {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+  padding: 10px 0 0 0;
+  background: url("../../assets/images/bg-search.jpg") center;
+}
+.content-detail {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+  padding: 10px 0 0 0;
+  background: #ffffff;
+}
+.left-detail {
+  float: left;
+  width: 70%;
+  margin-top: 0;
+  padding: 10px 30px 0 0;
+  box-sizing: border-box;
+}
+.right-detail {
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+  padding: 10px 0 0 0;
+}
+
+@media (max-width: 1199px) {
+  .detail {
+    padding-top: 60px;
+  }
+  .left-detail {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+  }
+  .right-detail {
+    width: 100%;
+  }
+}

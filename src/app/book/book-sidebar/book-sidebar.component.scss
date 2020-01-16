@@ -1,0 +1,117 @@
+.title-book-author {
+  float: left;
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  border-bottom: #ececec solid 1px;
+}
+.title-book-author .bg-book-author {
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: #bb3129 solid 2px;
+  padding: 10px 0;
+}
+
+.box-author {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.box-author .img-author {
+  float: left;
+  width: 20%;
+}
+.box-author .img-author img {
+  width: 100%;
+  display: inline-block;
+}
+.box-author .box-name-author {
+  float: left;
+  width: 80%;
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.box-author .name-author-link {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.box-author .box-count-book {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  color: #747474;
+}
+.box-list-book-of-author-cate {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    padding: 0;
+    background: #f5f5f5;
+  }
+  .box-list-book-of-author-cate ul {
+    float: left;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .box-list-book-of-author-cate ul li {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-bottom: #dedede solid 1px;
+    padding-bottom: 10px;
+  }
+  .box-list-book-of-author-cate ul li .img-book {
+    float: left;
+    width: 15%;
+  }
+  .box-list-book-of-author-cate ul li .img-book .box-absolute {
+    position: relative;
+  }
+  .box-list-book-of-author-cate ul li .img-book img {
+    width: 100%;
+    float: left;
+  }
+  .box-list-book-of-author-cate ul li .box-name-book {
+    float: left;
+    width: 85%;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .box-list-book-of-author-cate ul li .box-name-book .name-book-link {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 18px;
+  }
+  .box-list-book-of-author-cate ul li .cate-book,
+  .box-list-book-of-author-cate ul li .author-book {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    color: #747474;
+  }
+  .box-list-book-of-author-cate ul li .cate-book .name-cate-link,
+  .box-list-book-of-author-cate ul li .author-book .name-cate-link {
+    font-size: 12px;
+  }
+  .box-list-book-of-author-cate ul li:nth-last-child(1) {
+    border-bottom: #dedede solid 0px;
+    padding-bottom: 0px;
+    margin: 0;
+  }

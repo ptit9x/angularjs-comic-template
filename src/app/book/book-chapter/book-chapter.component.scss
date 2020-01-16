@@ -1,0 +1,85 @@
+.box-list-chapter {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.page-jum {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.page-jum .title-jum {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 13px;
+  color: #747474;
+}
+.page-jum .i-page-jum {
+  width: 100px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 8px;
+}
+.page-jum .b-page-jum {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  margin: 0;
+  line-height: 30px;
+  background: #a6150c;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s linear;
+}
+.page-jum .b-page-jum:hover {
+  background: #a6150c;
+}
+.page-jum .b-page-jum:after {
+  font-family: "truyenn" !important;
+  content: "\e907";
+  font-size: 13px;
+}
+.show-chapter {
+  float: left;
+  width: 100%;
+}
+.show-chapter .box-show-chapter {
+  float: left;
+  width: 50%;
+}
+.show-chapter .box-show-chapter ul {
+  float: left;
+  width: 100%;
+}
+.show-chapter .box-show-chapter ul li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+}
+.show-chapter .box-show-chapter ul li a {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  color: #212121;
+  font-weight: bold;
+}
+.show-chapter .box-show-chapter ul li a:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #bb3129;
+  float: left;
+  margin: 6px 5px 0 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.show-chapter .box-show-chapter ul li a:hover {
+  color: #9f224e;
+}

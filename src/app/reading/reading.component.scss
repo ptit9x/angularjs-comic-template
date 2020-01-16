@@ -1097,7 +1097,65 @@ body.w1280 .readcontent .top-page-right {
   position: relative;
   text-align: center;
 }
-
+@media (max-width: 1199px) {
+  .right-control-action {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 48px;
+    bottom: 0;
+    left: 0;
+    top: inherit;
+    background: #212531;
+  }
+  .right-control-action .list-menu-action {
+    height: 48px;
+    width: 100%;
+    position: absolute;
+    top: inherit;
+    margin-top: inherit;
+  }
+  .right-control-action .list-menu-action a {
+    font-size: 16px;
+    text-align: center;
+    line-height: 48px;
+    display: block;
+    height: 48px;
+    width: 25%;
+    transition: background-color 0.2s, color 0.2s;
+    color: #83848f;
+    border-left: 1px solid #171922;
+    border-right: 1px solid #171922;
+    border-top: none;
+    border-bottom: none;
+    position: absolute;
+  }
+  .right-control-action .btn-setting-read {
+    right: 25%;
+    margin-right: 0;
+  }
+  .right-control-action .btn-chapter-read {
+    left: 25%;
+    margin-left: 0;
+  }
+  .right-control-action .btn-chapter-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: inherit;
+  }
+  .right-control-action .btn-chapter-pre {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: inherit;
+  }
+  .right-show-fun {
+    right: 0;
+    width: 100% !important;
+    bottom: 48px;
+  }
+}
 @media (min-width: 640px) and (max-width: 800px) {
   .wrap .readcontent {
     width: 640px !important ;
