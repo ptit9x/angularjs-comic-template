@@ -5,7 +5,7 @@ import { FullComponent, NoFooterComponent } from './layouts';
 /**
  * Provides helper methods to create routes.
  */
-export class Shell {
+export class Shared {
   /**
    * Creates routes using the shell component and authentication.
    * @param routes The routes to add.

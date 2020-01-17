@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NewComicBookService } from './new-comic.service';
+import { finalize } from 'rxjs/operators';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 @Component({
@@ -7,7 +10,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./new-comic.component.scss']
 })
 export class NewComicComponent implements OnInit {
-  isLoading = false;
   newComics = [
     {
       url: '/truyen/xxx',
@@ -75,9 +77,18 @@ export class NewComicComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(
+    private boxFullBookService: NewComicBookService,
+    private spinner: NgxSpinnerService,
+  ) { }
 
   ngOnInit() {
-    this.isLoading = true;
+    this.spinner.show();
+    this.boxFullBookService.getPosts()
+      .pipe(finalize(() => { this.spinner.hide(); }))
+      .subscribe((v) => {
+        console.log(v, 'data');
+        // this.data = v;
+      });
   }
 }

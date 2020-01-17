@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Shell } from '../shell/shell.service';
+import { Shared } from '../shared/shared.service';
 import { ReadingComponent } from './reading.component';
 
 const routes: Routes = [
-  Shell.childReadingRoutes([{ path: 'chuong/:id', component: ReadingComponent }])
+  Shared.childReadingRoutes([{ path: 'chuong/:id', component: ReadingComponent }])
 ];
 
 @NgModule({

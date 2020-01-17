@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-
 @Component({
   selector: 'app-box-full-book',
   templateUrl: './box-book.component.html',
@@ -12,7 +11,7 @@ export class BoxFullBookComponent implements OnInit {
 
   isLoading = false;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     this.isLoading = true;

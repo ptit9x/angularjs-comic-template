@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import { Shell } from '../shell/shell.service';
+import { Shared } from '../shared/shared.service';
 
 const routes: Routes = [
-  Shell.childRoutes([
+  Shared.childRoutes([
     { path: '', component: HomeComponent }
   ])
 ];

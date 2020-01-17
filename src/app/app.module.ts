@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from './shared/shared.module';
-import { ShellModule } from './shell/shell.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
@@ -23,8 +24,9 @@ import { NotFoundModule } from './404/not-found.module';
     FormsModule,
     HttpClientModule,
     NgbModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
     SharedModule,
-    ShellModule,
     HomeModule,
     CategoryModule,
     BookModule,
