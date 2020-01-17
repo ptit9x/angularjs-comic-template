@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BoxFullBookComponent implements OnInit {
   @Input() title: string;
-  @Input() data: [];
+  @Input() data;
 
   isLoading = false;
 

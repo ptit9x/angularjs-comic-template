@@ -10,63 +10,63 @@ export class HeaderComponent implements OnInit {
   displaySearchBar = false;
   menus = [
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Tất cả',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Tiên Hiệp',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Kiếm Hiệp',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Ngôn Tình',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Đô Thị',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Quan Trường',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Võng Du',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Khoa Huyễn',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Huyền Huyễn',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Dị Giới',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Dị Năng',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Quân Sự',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Lịch Sử',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Xuyên Không',
     },
     {
-      url: '/category',
+      url: '/the-loai',
       name: 'Trọng Sinh',
     },
   ];

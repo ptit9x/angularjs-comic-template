@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-book-introduce',
@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-introduce.component.scss']
 })
 export class BookIntroduceComponent implements OnInit {
+  @Input() book;
+  public showFullDesc: boolean;
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.showFullDesc = !(this.book.introduce && this.book.introduce.length > 100);
+  }
+
+  toggleDesc() {
+    this.showFullDesc = true;
+  }
 }

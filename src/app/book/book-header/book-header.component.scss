@@ -152,12 +152,17 @@
   width: 100%;
   font-size: 14px;
   padding: 10px 0 15px 0;
+  cursor: pointer;
 }
 .detail-header .btn-readbook {
   font-size: 15px;
   font-weight: bold;
   margin-right: 15px;
   padding: 10px 20px;
+}
+.detail-header .btn-boder-action:hover,
+.detail-header .btn-readbook:hover {
+  color: #FFF;
 }
 .detail-header .txt-data-sum {
   float: left;

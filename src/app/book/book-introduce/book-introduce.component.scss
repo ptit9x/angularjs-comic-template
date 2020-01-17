@@ -35,6 +35,9 @@
     transition: opacity 0.3s;
     pointer-events: none;
   }
+  .box-show-des.show-full-des {
+    max-height: none;
+  }
 }
 .c-content-readmore {
   float: left;

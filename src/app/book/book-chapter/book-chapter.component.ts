@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-book-chapter',
@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./book-chapter.component.scss']
 })
 export class BookChapterComponent implements OnInit {
+  @Input() chapters;
 
   constructor() { }
 
   ngOnInit() { }
+
+  manualSearch() {
+    console.log('search!');
+  }
+
+  goto(page) {
+    console.log('go to ', page);
+  }
 }

@@ -1,6 +1,6 @@
 <div class="cate-page">
   <div class="container">
-    <app-cat-list-cat></app-cat-list-cat>
-    <app-cat-list-story></app-cat-list-story>
+    <app-cat-list-cat [list]="list" [categories]="categories"></app-cat-list-cat>
+    <app-cat-list-story [currentCategory]="currentCategory"></app-cat-list-story>
   </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-cat.component.scss']
 })
 export class ListCatComponent implements OnInit {
+  @Input() list;
+  @Input() categories;
 
-  constructor() {}
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

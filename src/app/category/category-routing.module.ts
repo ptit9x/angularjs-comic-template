@@ -5,7 +5,19 @@ import { Shell } from '../shell/shell.service';
 import { CategoryComponent } from './category.component';
 
 const routes: Routes = [
-  Shell.childRoutes([{ path: 'category', component: CategoryComponent, data: { title: 'Category' } }])
+  Shell.childRoutes([{
+    path: 'the-loai',
+    component: CategoryComponent
+  },
+  {
+    path: 'the-loai/:slug',
+    component: CategoryComponent
+  },
+  {
+    path: 'the-loai/:slug/:categoryId',
+    component: CategoryComponent
+  }
+  ])
 ];
 
 @NgModule({

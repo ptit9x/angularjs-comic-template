@@ -2,13 +2,12 @@
   <div class="detail-title-box">
     <div class="title-select-name">Giới thiệu sách</div>
   </div>
-  <div class="box-show-des">
-    <p>Nội Dung Truyện : <strong>Phòng Sách Lúc Nửa Đêm</strong>
+  <div [ngClass]="showFullDesc ? 'box-show-des show-full-des' : 'box-show-des'">
+    <p>Nội Dung Truyện : <strong>{{book.title}}</strong>
     </p>
-    <p>Có một phòng sách chỉ cho phép bạn ghé thăm&nbsp;lúc nửa đêm.<br><br>Xin chào mừng!</p>
+    <p [innerHTML]="book.introduce"></p>
   </div>
-  <div class="c-content-readmore">
-    <a onclick="toggleDesc()" class="content-readmore" rel="nofollow" style="display: inline-block;">Xem
-      thêm</a>
+  <div *ngIf="!showFullDesc" class="c-content-readmore">
+    <a (click)="toggleDesc()" class="content-readmore" rel="nofollow" style="display: inline-block;">Xem thêm</a>
   </div>
 </div>

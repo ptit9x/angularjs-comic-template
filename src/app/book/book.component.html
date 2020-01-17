@@ -1,14 +1,14 @@
 <div class="detail">
   <div class="container">
-    <app-book-header></app-book-header>
+    <app-book-header [book]="book"></app-book-header>
   </div>
 </div>
 
 <div class="content-detail">
   <div class="container">
     <div class="left-detail">
-      <app-book-introduce></app-book-introduce>
-      <app-book-chapter></app-book-chapter>
+      <app-book-introduce [book]="book"></app-book-introduce>
+      <app-book-chapter [chapters]="chapters"></app-book-chapter>
       <app-book-comment></app-book-comment>
     </div>
     <div class="right-detail">

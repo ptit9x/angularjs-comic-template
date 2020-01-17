@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     title: 'Truyện Hot',
     data: [
       {
-        url: '/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong',
+        url: '/truyen/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong',
         image: 'https://res.cloudinary.com/tncdn3/image/upload/v1568457886/truyen/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong.jpg',
         title: 'Một Thai Hai Bảo: Giám Đốc Hàng Tỉ Yêu Vợ Tận Xương - Hoa Dung Nguyệt Hạ',
         author: 'Hoa Dung Nguyệt Hạ',
@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/hoa-dung-nguyet-ha/5be020cab19786223c89a0aa'
       },
       {
-        url: '/linh-vu-thien-ha',
+        url: '/truyen/linh-vu-thien-ha',
         image: 'https://res.cloudinary.com/tncdn2/image/upload/v1568449605/truyen/linh-vu-thien-ha.jpg',
         title: 'Linh Vũ Thiên Hạ - Vũ Phong',
         author: 'Vũ Phong',
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/vu-phong/5bdecab406c7c41b7eea20b7'
       },
       {
-        url: '/than-dao-dan-ton',
+        url: '/truyen/than-dao-dan-ton',
         image: 'https://res.cloudinary.com/truyennhieu-images/image/upload/v1544573020/truyen/than-dao-dan-ton.jpg',
         title: 'Thần Đạo Đan Tôn - Cô Đơn Địa Phi',
         author: 'Cô Đơn Địa Phi',
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/co-don-dia-phi/5bded41506c7c41b7eea36ec'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/than-khong-thien-ha',
+        url: '/truyen/than-khong-thien-ha',
         image: 'https://res.cloudinary.com/truyennhieu-images/image/upload/v1544711852/truyen/than-khong-thien-ha.jpg',
         title: 'Than Khong Thien Ha - Nga Ban Thuan Khiet',
         author: 'Ngã Bản Thuần Khiết',
@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/nga-ban-thuan-khiet/5be0f00eb2242828641703f7'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -68,7 +68,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -113,7 +113,7 @@ export class HomeComponent implements OnInit {
     title: 'Truyện nguyễn nhật ánh',
     data: [
       {
-        url: '/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong',
+        url: '/truyen/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong',
         image: 'https://res.cloudinary.com/tncdn3/image/upload/v1568457886/truyen/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong.jpg',
         title: 'Một Thai Hai Bảo: Giám Đốc Hàng Tỉ Yêu Vợ Tận Xương - Hoa Dung Nguyệt Hạ',
         author: 'Hoa Dung Nguyệt Hạ',
@@ -121,7 +121,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/hoa-dung-nguyet-ha/5be020cab19786223c89a0aa'
       },
       {
-        url: '/linh-vu-thien-ha',
+        url: '/truyen/linh-vu-thien-ha',
         image: 'https://res.cloudinary.com/tncdn2/image/upload/v1568449605/truyen/linh-vu-thien-ha.jpg',
         title: 'Linh Vũ Thiên Hạ - Vũ Phong',
         author: 'Vũ Phong',
@@ -129,7 +129,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/vu-phong/5bdecab406c7c41b7eea20b7'
       },
       {
-        url: '/than-dao-dan-ton',
+        url: '/truyen/than-dao-dan-ton',
         image: 'https://res.cloudinary.com/truyennhieu-images/image/upload/v1544573020/truyen/than-dao-dan-ton.jpg',
         title: 'Thần Đạo Đan Tôn - Cô Đơn Địa Phi',
         author: 'Cô Đơn Địa Phi',
@@ -137,7 +137,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/co-don-dia-phi/5bded41506c7c41b7eea36ec'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -145,7 +145,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/than-khong-thien-ha',
+        url: '/truyen/than-khong-thien-ha',
         image: 'https://res.cloudinary.com/truyennhieu-images/image/upload/v1544711852/truyen/than-khong-thien-ha.jpg',
         title: 'Than Khong Thien Ha - Nga Ban Thuan Khiet',
         author: 'Ngã Bản Thuần Khiết',
@@ -153,7 +153,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/nga-ban-thuan-khiet/5be0f00eb2242828641703f7'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -161,7 +161,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -169,7 +169,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -177,7 +177,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -185,7 +185,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -193,7 +193,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -201,7 +201,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/thien-tam-tho-dau/5bdfb4108ee5f91f32994108'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -214,7 +214,7 @@ export class HomeComponent implements OnInit {
     title: 'Truyện đã hoàn thành',
     data: [
       {
-        url: '/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong',
+        url: '/truyen/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong',
         image: 'https://res.cloudinary.com/tncdn3/image/upload/v1568457886/truyen/mot-thai-hai-bao-giam-doc-hang-ti-yeu-vo-tan-xuong.jpg',
         title: 'Một Thai Hai Bảo: Giám Đốc Hàng Tỉ Yêu Vợ Tận Xương - Hoa Dung Nguyệt Hạ',
         author: 'Hoa Dung Nguyệt Hạ',
@@ -223,7 +223,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 268 chương',
       },
       {
-        url: '/linh-vu-thien-ha',
+        url: '/truyen/linh-vu-thien-ha',
         image: 'https://res.cloudinary.com/tncdn2/image/upload/v1568449605/truyen/linh-vu-thien-ha.jpg',
         title: 'Linh Vũ Thiên Hạ - Vũ Phong',
         author: 'Vũ Phong',
@@ -232,7 +232,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 37 chương',
       },
       {
-        url: '/than-dao-dan-ton',
+        url: '/truyen/than-dao-dan-ton',
         image: 'https://res.cloudinary.com/truyennhieu-images/image/upload/v1544573020/truyen/than-dao-dan-ton.jpg',
         title: 'Thần Đạo Đan Tôn - Cô Đơn Địa Phi',
         author: 'Cô Đơn Địa Phi',
@@ -241,7 +241,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 37 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -250,7 +250,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 10 chương',
       },
       {
-        url: '/than-khong-thien-ha',
+        url: '/truyen/than-khong-thien-ha',
         image: 'https://res.cloudinary.com/truyennhieu-images/image/upload/v1544711852/truyen/than-khong-thien-ha.jpg',
         title: 'Than Khong Thien Ha - Nga Ban Thuan Khiet',
         author: 'Ngã Bản Thuần Khiết',
@@ -258,7 +258,7 @@ export class HomeComponent implements OnInit {
         authorUrl: '/tac-gia/nga-ban-thuan-khiet/5be0f00eb2242828641703f7'
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -267,7 +267,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 9 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -276,7 +276,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 100 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -285,7 +285,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 9999 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -294,7 +294,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 7864 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -303,7 +303,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 34345 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',
@@ -312,7 +312,7 @@ export class HomeComponent implements OnInit {
         fullLabel: 'Full - 13 chương',
       },
       {
-        url: '/dau-pha-thuong-khung',
+        url: '/truyen/dau-pha-thuong-khung',
         image: 'https://res.cloudinary.com/tncdn1/image/upload/v1568448256/truyen/dau-pha-thuong-khung.jpg',
         title: 'Đấu Phá Thương Khung - Thiên Tàm Thổ Đậu',
         author: 'Thiên Tàm Thổ Đậu',

@@ -1,12 +1,14 @@
 <div class="box-author">
 
   <div class="img-author">
-    <a href="/tac-gia/thanh-khiet-xa/5de937b23e96166ca455700a"><img
-        src="https://res.cloudinary.com/tncdn11/image/upload/v1573746420/truyennhieu/images/default-author.jpg"></a>
+    <a [routerLink]="'/tac-gia/thanh-khiet-xa/5de937b23e96166ca455700a'">
+      <img src="assets/images/default-author.jpg" />
+    </a>
   </div>
   <div class="box-name-author">
-    <a href="/tac-gia/thanh-khiet-xa/5de937b23e96166ca455700a" class="name-author-link link-main-color">Thanh
-      Khiết Xà</a>
+    <a [routerLink]="'/tac-gia/thanh-khiet-xa/5de937b23e96166ca455700a'" class="name-author-link link-main-color">
+      Thanh Khiết Xà
+    </a>
     <span class="box-count-book ">Tác phẩm: <span class="color-output-data">2</span></span>
   </div>
 
@@ -20,147 +22,17 @@
       <span class="bg-book-author">Truyện cùng thể loại</span></div>
     <ul>
 
-      <li>
-        <div class="img-book"><a href="/quai-phi-thien-ha" class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn12/image/upload/v1578110667/truyen/quai-phi-thien-ha.jpg"
-              alt="Quai Phi Thien Ha - Cam Hoang"
-              src="https://res.cloudinary.com/tncdn12/image/upload/v1578110667/truyen/quai-phi-thien-ha.jpg"
-              data-loaded="true"></a></div>
+      <li *ngFor="let item of sameCategories">
+        <div class="img-book">
+          <a [routerLink]="item.link" class="box-absolute fn-shadow">
+            <img alt="Quai Phi Thien Ha - Cam Hoang" [src]="item.image" />
+          </a>
+        </div>
         <div class="box-name-book">
-          <a href="/quai-phi-thien-ha" class="name-book-link link-main-color">Quái Phi Thiên Hạ</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/cam-hoang/5bdfebf4b19786223c89934a"
-              class="name-cate-link link-main-color">Cẩm Hoàng</a></span>
+          <a [routerLink]="item.link" class="name-book-link link-main-color">{{item.title}}</a>
+          <span class="author-book ">Tác giả: <a [routerLink]="item.authorUrl" class="name-cate-link link-main-color">{{item.author}}</a></span>
         </div>
       </li>
-
-      <li>
-        <div class="img-book"><a href="/quy-de-cuong-the-dai-tieu-thu-an-choi-trac-tang"
-            class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn4/image/upload/v1568741527/truyen/quy-de-cuong-the-dai-tieu-thu-an-choi-trac-tang.jpg"
-              alt="Quy De Cuong The Dai Tieu Thu An Choi Trac Tang - Tieu That Gia"
-              src="https://res.cloudinary.com/tncdn4/image/upload/v1568741527/truyen/quy-de-cuong-the-dai-tieu-thu-an-choi-trac-tang.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/quy-de-cuong-the-dai-tieu-thu-an-choi-trac-tang" class="name-book-link link-main-color">Quỷ
-            Đế Cuồng Thê: Đại Tiểu Thư Ăn Chơi Trác Táng</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/tieu-that-gia/5be263d97f0e2b2fdfe63da6"
-              class="name-cate-link link-main-color">Tiêu Thất Gia</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/phu-the-nha-ngheo" class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn4/image/upload/v1568460571/truyen/phu-the-nha-ngheo.jpg"
-              alt="Phu The Nha Ngheo - Lao Nap Bat Dong Ai"
-              src="https://res.cloudinary.com/tncdn4/image/upload/v1568460571/truyen/phu-the-nha-ngheo.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/phu-the-nha-ngheo" class="name-book-link link-main-color">Phu Thê Nhà Nghèo</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/lao-nap-bat-dong-ai/5c1286d541c1ad4206236db4"
-              class="name-cate-link link-main-color">Lão Nạp Bất Đổng Ái</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/cuoc-hon-nhan-bi-mat-day-ngot-ngao-vo-yeu-be-bong-cua-dai-gia-tai-phiet"
-            class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn10/image/upload/v1574956869/truyen/cuoc-hon-nhan-bi-mat-day-ngot-ngao-vo-yeu-be-bong-cua-dai-gia-tai-phiet.jpg"
-              alt="Cuoc Hon Nhan Bi Mat Day Ngot Ngao Vo Yeu Be Bong Cua Dai Gia Tai Phiet - Helen Duong Duong"
-              src="https://res.cloudinary.com/tncdn10/image/upload/v1574956869/truyen/cuoc-hon-nhan-bi-mat-day-ngot-ngao-vo-yeu-be-bong-cua-dai-gia-tai-phiet.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/cuoc-hon-nhan-bi-mat-day-ngot-ngao-vo-yeu-be-bong-cua-dai-gia-tai-phiet"
-            class="name-book-link link-main-color">Cuộc Hôn Nhân Bí Mật Đầy Ngọt Ngào: Vợ Yêu Bé Bỏng Của Đại
-            Gia Tài Phiệt</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/helen-duong-duong/5ddd7d496de0af41ad323f02"
-              class="name-cate-link link-main-color">Helen Dương Dương</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/xin-chao-thieu-tuong-dai-nhan" class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn10/image/upload/v1577280861/truyen/xin-chao-thieu-tuong-dai-nhan.jpg"
-              alt="Xin Chao Thieu Tuong Dai Nhan - Han Vo Ki"
-              src="https://res.cloudinary.com/tncdn10/image/upload/v1577280861/truyen/xin-chao-thieu-tuong-dai-nhan.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/xin-chao-thieu-tuong-dai-nhan" class="name-book-link link-main-color">Xin Chào Thiếu Tướng
-            Đại Nhân</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/han-vo-ki/5dfe74008205eb4dba48a6ba"
-              class="name-cate-link link-main-color">Hàn Võ Kí</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/thanh-xuan-ngay-tho-tuoi-dep-cung-em" class="box-absolute fn-shadow"><img
-              class="lozad"
-              data-src="https://res.cloudinary.com/tncdn10/image/upload/v1576247451/truyen/thanh-xuan-ngay-tho-tuoi-dep-cung-em.jpg"
-              alt="Thanh Xuan Ngay Tho Tuoi Dep Cung Em - Diep Phi Da"
-              src="https://res.cloudinary.com/tncdn10/image/upload/v1576247451/truyen/thanh-xuan-ngay-tho-tuoi-dep-cung-em.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/thanh-xuan-ngay-tho-tuoi-dep-cung-em" class="name-book-link link-main-color">Thanh Xuân
-            Ngây Thơ Tươi Đẹp Cùng Em</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/diep-phi-da/5be1c6d81b07282cdf88ea36"
-              class="name-cate-link link-main-color">Diệp Phi Dạ</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/cuoc-tuong-ngo-sai-lam" class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn10/image/upload/v1574956869/truyen/cuoc-tuong-ngo-sai-lam.jpg"
-              alt="Cuoc Tuong Ngo Sai Lam - Khanh Diem Giang Son"
-              src="https://res.cloudinary.com/tncdn10/image/upload/v1574956869/truyen/cuoc-tuong-ngo-sai-lam.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/cuoc-tuong-ngo-sai-lam" class="name-book-link link-main-color">Cuộc Tương Ngộ Sai Lầm</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/khanh-diem-giang-son/5ddd7e0b6de0af41ad324017"
-              class="name-cate-link link-main-color">Khanh Điểm Giang Sơn</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/vo-than-nghich-thien-ma-phi-chi-ton" class="box-absolute fn-shadow"><img
-              class="lozad"
-              data-src="https://res.cloudinary.com/tncdn9/image/upload/v1572276523/truyen/vo-than-nghich-thien-ma-phi-chi-ton.jpg"
-              alt="Vo Than Nghich Thien Ma Phi Chi Ton - Bang Y Kha Kha"
-              src="https://res.cloudinary.com/tncdn9/image/upload/v1572276523/truyen/vo-than-nghich-thien-ma-phi-chi-ton.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/vo-than-nghich-thien-ma-phi-chi-ton" class="name-book-link link-main-color">Võ Thần Nghịch
-            Thiên: Ma Phi Chí Tôn</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/bang-y-kha-kha/5be2677d7f0e2b2fdfe644cb"
-              class="name-cate-link link-main-color">Băng Y Khả Khả</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/thien-hau-tieu-thanh-mai" class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn10/image/upload/v1577372912/truyen/thien-hau-tieu-thanh-mai.jpg"
-              alt="Thien Hau Tieu Thanh Mai - Ga An Trung Ga"
-              src="https://res.cloudinary.com/tncdn10/image/upload/v1577372912/truyen/thien-hau-tieu-thanh-mai.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/thien-hau-tieu-thanh-mai" class="name-book-link link-main-color">Thiên Hậu Tiểu Thanh
-            Mai</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/ga-an-trung-ga/5e0228098205eb4dba48aea6"
-              class="name-cate-link link-main-color">Gà Ăn Trứng Gà</a></span>
-        </div>
-      </li>
-
-      <li>
-        <div class="img-book"><a href="/ngai-co-than-men" class="box-absolute fn-shadow"><img class="lozad"
-              data-src="https://res.cloudinary.com/tncdn10/image/upload/v1577599394/truyen/ngai-co-than-men.jpg"
-              alt="Ngai Co Than Men - Xan Dieu Ai Ngu"
-              src="https://res.cloudinary.com/tncdn10/image/upload/v1577599394/truyen/ngai-co-than-men.jpg"
-              data-loaded="true"></a></div>
-        <div class="box-name-book">
-          <a href="/ngai-co-than-men" class="name-book-link link-main-color">Ngài Cố Thân Mến!</a>
-          <span class="author-book ">Tác giả: <a href="/tac-gia/xan-dieu-ai-ngu/5e022a248205eb4dba48b169"
-              class="name-cate-link link-main-color">Xán Diểu Ái Ngư</a></span>
-        </div>
-      </li>
-
     </ul>
   </div>
 </div>

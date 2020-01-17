@@ -1,101 +1,14 @@
 <div class="cate-left-menu">
   <ul class="item-full boder-bottom">
     <div class="group-name-title">Danh sách</div>
-    <li><a href="#" title="Truyện hot">Truyện mới cập nhật</a></li>
-    <li><a href="#" title="Truyện hot">Truyện hot</a></li>
-    <li><a href="#" title="Truyện full">Truyện full</a></li>
+    <li *ngFor="let item of list">
+      <a [href]="item.url" [title]="item.title" [ngClass]="{'active': item.active}">{{item.name}}</a>
+    </li>
   </ul>
   <ul>
     <div class="group-name-title">Thể loại</div>
-    <li><a href="/the-loai" title="Tất cả truyện" class="">Tất cả</a></li>
-
-    <li><a href="/the-loai/tien-hiep/5bdec66306c7c41b7eea0fe4" title="Truyện Tiên Hiệp" class="">Tiên Hiệp</a>
+    <li *ngFor="let item of categories">
+      <a [href]="item.url" [title]="item.title" [ngClass]="{'active': item.active}">{{item.name}}</a>
     </li>
-
-    <li><a href="/the-loai/kiem-hiep/5be109e6b22428286417369f" title="Truyện Kiếm Hiệp" class="">Kiếm Hiệp</a>
-    </li>
-
-    <li><a href="/the-loai/ngon-tinh/5bdec27dc551731a60abe1ff" title="Truyện Ngôn Tình" class="">Ngôn Tình</a>
-    </li>
-
-    <li><a href="/the-loai/do-thi/5bdec27dc551731a60abe201" title="Truyện Đô Thị" class="active">Đô Thị</a></li>
-
-    <li><a href="/the-loai/quan-truong/5be6a6689d614d46ffa68d92" title="Truyện Quan Trường" class="">Quan
-        Trường</a></li>
-
-    <li><a href="/the-loai/vong-du/5bdf022606c7c41b7eea55c0" title="Truyện Võng Du" class="">Võng Du</a></li>
-
-    <li><a href="/the-loai/khoa-huyen/5bdf18bc06c7c41b7eea8070" title="Truyện Khoa Huyễn" class="">Khoa
-        Huyễn</a></li>
-
-    <li><a href="/the-loai/huyen-huyen/5bdecab406c7c41b7eea20b9" title="Truyện Huyền Huyễn" class="">Huyền
-        Huyễn</a></li>
-
-    <li><a href="/the-loai/di-gioi/5bdecab406c7c41b7eea20b6" title="Truyện Dị Giới" class="">Dị Giới</a></li>
-
-    <li><a href="/the-loai/di-nang/5be1c56b1b07282cdf88e775" title="Truyện Dị Năng" class="">Dị Năng</a></li>
-
-    <li><a href="/the-loai/quan-su/5be67f9e9d614d46ffa63eb4" title="Truyện Quân Sự" class="">Quân Sự</a></li>
-
-    <li><a href="/the-loai/lich-su/5be1b09ee2f0522ba9218079" title="Truyện Lịch Sử" class="">Lịch Sử</a></li>
-
-    <li><a href="/the-loai/xuyen-khong/5bdecab406c7c41b7eea20b8" title="Truyện Xuyên Không" class="">Xuyên
-        Không</a></li>
-
-    <li><a href="/the-loai/trong-sinh/5bdfb00f8ee5f91f329931cc" title="Truyện Trọng Sinh" class="">Trọng
-        Sinh</a></li>
-
-    <li><a href="/the-loai/trinh-tham/5be268277f0e2b2fdfe6461c" title="Truyện Trinh Thám" class="">Trinh
-        Thám</a></li>
-
-    <li><a href="/the-loai/tham-hiem/5be25add7f0e2b2fdfe62c1b" title="Truyện Thám Hiểm" class="">Thám Hiểm</a>
-    </li>
-
-    <li><a href="/the-loai/linh-di/5be2af29ea81db31673b318f" title="Truyện Linh Dị" class="">Linh Dị</a></li>
-
-    <li><a href="/the-loai/sac/5be10a0ab2242828641736e8" title="Truyện Sắc" class="">Sắc</a></li>
-
-    <li><a href="/the-loai/nguoc/5be1bbf9e2f0522ba92180d5" title="Truyện Ngược" class="">Ngược</a></li>
-
-    <li><a href="/the-loai/sung/5bdec66306c7c41b7eea0fe8" title="Truyện Sủng" class="">Sủng</a></li>
-
-    <li><a href="/the-loai/cung-dau/5be3b84d6e8d9936a27d6602" title="Truyện Cung Đấu" class="">Cung Đấu</a></li>
-
-    <li><a href="/the-loai/nu-cuong/5be1be3ce2f0522ba9218544" title="Truyện Nữ Cường" class="">Nữ Cường</a></li>
-
-    <li><a href="/the-loai/gia-dau/5be2639f7f0e2b2fdfe63d31" title="Truyện Gia Đấu" class="">Gia Đấu</a></li>
-
-    <li><a href="/the-loai/dong-phuong/5be679bc9d614d46ffa62b08" title="Truyện Đông Phương" class="">Đông
-        Phương</a></li>
-
-    <li><a href="/the-loai/dam-my/5bdf162c06c7c41b7eea7b78" title="Truyện Đam Mỹ" class="">Đam Mỹ</a></li>
-
-    <li><a href="/the-loai/bach-hop/5be7208e5ce85f4bc1f4ca89" title="Truyện Bách Hợp" class="">Bách Hợp</a></li>
-
-    <li><a href="/the-loai/hai-huoc/5bdec66306c7c41b7eea0fe6" title="Truyện Hài Hước" class="">Hài Hước</a></li>
-
-    <li><a href="/the-loai/dien-van/5be266f47f0e2b2fdfe643b9" title="Truyện Điền Văn" class="">Điền Văn</a></li>
-
-    <li><a href="/the-loai/co-dai/5be10a3ab224282864173745" title="Truyện Cổ Đại" class="">Cổ Đại</a></li>
-
-    <li><a href="/the-loai/mat-the/5be267aa7f0e2b2fdfe64523" title="Truyện Mạt Thế" class="">Mạt Thế</a></li>
-
-    <li><a href="/the-loai/truyen-teen/5bdefffe06c7c41b7eea519b" title="Truyện Truyện Teen" class="">Truyện
-        Teen</a></li>
-
-    <li><a href="/the-loai/phuong-tay/5be1d1492b9b392d52d2ff68" title="Truyện Phương Tây" class="">Phương
-        Tây</a></li>
-
-    <li><a href="/the-loai/nu-phu/5be681599d614d46ffa64213" title="Truyện Nữ Phụ" class="">Nữ Phụ</a></li>
-
-    <li><a href="/the-loai/light-novel/5be7bd9e5ce85f4bc1f513c7" title="Truyện Light Novel" class="">Light
-        Novel</a></li>
-
-    <li><a href="/the-loai/viet-nam/5be1b09ee2f0522ba9218078" title="Truyện Việt Nam" class="">Việt Nam</a></li>
-
-    <li><a href="/the-loai/doan-van/5be686be9d614d46ffa64cae" title="Truyện Đoản Văn" class="">Đoản Văn</a></li>
-
-    <li><a href="/the-loai/khac/5be68b279d614d46ffa65726" title="Truyện Khác" class="">Khác</a></li>
-
   </ul>
 </div>
