@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cat-list-story',
@@ -7,25 +6,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./list-story.component.scss']
 })
 export class ListStoryComponent implements OnInit {
-  @Input() currentCategory;
-
-  public category;
+  @Input() category;
   public books;
 
-  constructor(
-    private route: ActivatedRoute,
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-    const { id, slug, title, description } = this.currentCategory;
-    const url = `/the-loai/${slug}/${id}`;
-    this.category = {
-      id,
-      url,
-      title,
-      description,
-    };
-
     this.books = [{
       url: '/truyen/xin-chao-thieu-tuong-dai-nhan',
       image: 'https://res.cloudinary.com/tncdn10/image/upload/v1577280861/truyen/xin-chao-thieu-tuong-dai-nhan.jpg',

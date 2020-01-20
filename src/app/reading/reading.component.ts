@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 
@@ -18,6 +18,7 @@ export class ReadingComponent implements OnInit {
   public reading;
   public chapters;
   public currentUrl: string;
+  public displayControlAction: boolean;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,6 +32,7 @@ export class ReadingComponent implements OnInit {
     this.alignSetting = 't-align-left';
     this.readChapterMenu = false;
     this.displayChaperSearch = false;
+    this.displayControlAction = true;
     const bookId = this.route.snapshot.params.id;
     this.currentUrl = `/chuong/${bookId}`;
     // call API for this
@@ -223,5 +225,14 @@ export class ReadingComponent implements OnInit {
 
   hideChapterSearch() {
     this.displayChaperSearch = false;
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    if (window.scrollY === 0) {
+      this.displayControlAction = true;
+    } else {
+      this.displayControlAction = false;
+    }
   }
 }

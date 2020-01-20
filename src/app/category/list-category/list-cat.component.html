@@ -2,13 +2,13 @@
   <ul class="item-full boder-bottom">
     <div class="group-name-title">Danh sách</div>
     <li *ngFor="let item of list">
-      <a [href]="item.url" [title]="item.title" [ngClass]="{'active': item.active}">{{item.name}}</a>
+      <a [routerLink]="item.url" [title]="item.title" [ngClass]="{'active': item.active}" (click)="onClick($event, item)">{{item.name}}</a>
     </li>
   </ul>
   <ul>
     <div class="group-name-title">Thể loại</div>
     <li *ngFor="let item of categories">
-      <a [href]="item.url" [title]="item.title" [ngClass]="{'active': item.active}">{{item.name}}</a>
+      <a [routerLink]="item.url" [title]="item.title" [ngClass]="{'active': item.active}" (click)="onClick($event, item)">{{item.name}}</a>
     </li>
   </ul>
 </div>

@@ -7,26 +7,27 @@
       </a>
       <div class="navbar-menu">
         <ul class="left-menu mainmenu">
-          <li class="active"><a [routerLink]="'/'" rel="dofollow" title="Trang chủ"><span class="icon-home"></span></a></li>
-          <li>
+          <li [ngClass]="{active: path === '/'}"><a [routerLink]="'/'" title="Trang chủ"><span class="icon-home"></span></a>
+          </li>
+          <li [ngClass]="{active: path === '/the-loai'}">
             <a title="Thể loại">Thể loại</a>
             <div class="mainmenu-topbar hide">
               <div class="main-menu-more">
                 <div class="menu-show-full-cate">
                   <ul class="list-menu">
                     <li *ngFor="let item of menus">
-                      <a [routerLink]="item.url" [title]="item.name">{{item.name}}</a>
+                      <a [routerLink]="item.url" [title]="item.name" (click)="onActiveMenu('/the-loai')">{{item.name}}</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
-          <li>
-            <a [routerLink]="'/the-loai/kiem-hiep'" rel="dofollow" title="Kiếm Hiệp">Kiếm Hiệp</a>
+          <li [ngClass]="{active: path === '/the-loai/kiem-hiep'}">
+            <a [routerLink]="'/the-loai/kiem-hiep'" title="Kiếm Hiệp" (click)="onActiveMenu('/the-loai/kiem-hiep')">Kiếm Hiệp</a>
           </li>
-          <li>
-            <a [routerLink]="'/the-loai/ngon-tinh'" rel="dofollow" title="Ngôn Tình">Ngôn Tình</a>
+          <li [ngClass]="{active: path === '/the-loai/ngon-tinh'}">
+            <a [routerLink]="'/the-loai/ngon-tinh'" title="Ngôn Tình" (click)="onActiveMenu('/the-loai/ngon-tinh')">Ngôn Tình</a>
           </li>
         </ul>
       </div>
@@ -42,3 +43,6 @@
     </div>
   </div>
 </div>
+<a [ngClass]="{ 'back-to-top': true, 'hide': !displayBackTop}" (click)="scrollTop()">
+  <i class="truyenn-icon_small_up"></i>
+</a>

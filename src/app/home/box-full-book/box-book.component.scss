@@ -27,6 +27,52 @@
           width: 100%;
           padding: 0px 0 3px 0;
         }
+        .zl {
+          float: left;
+          width: 100%;
+          padding: 0;
+          color: #666;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          span:first-child {
+            display: inline-block;
+            min-width: 66px;
+          }
+          .mh-star-line {
+            display: inline-block;
+            background-image: url("../../../assets/images/star.png");
+            width: 68px;
+            height: 12px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+          }
+          .mh-star-line.star-5 {
+            background-position: 0 0;
+          }
+
+          .mh-star-line.star-4 {
+            background-position: 0 -13px;
+          }
+
+          .mh-star-line.star-3 {
+            background-position: 0 -28px;
+          }
+
+          .mh-star-line.star-2 {
+            background-position: 0 -42px;
+          }
+
+          .mh-star-line.star-1 {
+            background-position: 0 -56px;
+          }
+
+          .mh-star-line.star-0 {
+            background-position: 0 -71px;
+          }
+        }
         .show-author {
           float: left;
           width: 100%;

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 
@@ -10,10 +10,16 @@ import { ActivatedRoute } from '@angular/router';
 export class ListCatComponent implements OnInit {
   @Input() list;
   @Input() categories;
+  @Output() clickLink: EventEmitter<any> = new EventEmitter();
 
   constructor(
     private route: ActivatedRoute,
   ) { }
 
   ngOnInit() { }
+
+  onClick(e, item) {
+    e.preventDefault();
+    this.clickLink.emit(item);
+  }
 }

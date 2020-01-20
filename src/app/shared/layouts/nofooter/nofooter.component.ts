@@ -8,4 +8,8 @@ export class NoFooterComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  onScroll() {
+    console.log('11111');
+  }
 }

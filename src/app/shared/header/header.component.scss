@@ -150,3 +150,30 @@
     }
   }
 }
+
+.back-to-top {
+  border: 2px solid #ed1c24;
+  bottom: 20px;
+  color: #ed1c24;
+  display: block;
+  line-height: 34px;
+  min-height: 38px;
+  min-width: 38px;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 38px;
+  z-index: 21;
+  transition: color .3s, opacity .3s, transform .3s;
+  transition:0.1s linear all;
+}
+.back-to-top:hover {
+  background-color: #ed1c24;
+  color: #FFF;
+}
+.hide {
+  display: none;
+}

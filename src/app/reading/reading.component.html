@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="right-control-action">
+      <div [ngClass]="{'right-control-action': true, 'hide': !displayControlAction}">
         <div class="list-menu-action">
           <a (click)="toggleSetting()" class="btn-setting-read" title="Tùy chỉnh đọc"></a>
           <a (click)="toggleChapterMenu()" class="btn-chapter-read" title="Danh sách chương"></a>

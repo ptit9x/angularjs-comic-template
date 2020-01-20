@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './category.component.html',
   styleUrls: ['./category.component.scss']
 })
-export class CategoryComponent implements OnInit, OnChanges {
+export class CategoryComponent implements OnInit {
   public list = [];
   public categories = [];
   public currentCategory = null;
@@ -60,29 +60,35 @@ export class CategoryComponent implements OnInit, OnChanges {
       id: '5be109e6b22428286417369f',
       title: 'Truyện Kiếm Hiệp',
       name: 'Kiếm Hiệp',
+      description: 'Những truyện Kiếm Hiệp',
     },
     {
       slug: 'ngon-tinh',
       id: '5be109e6b22428286417369f',
       title: 'Truyện Ngôn Tình',
       name: 'Ngôn Tình',
+      description: 'Những truyện Ngôn Tình',
     }];
-    this.list = dummyList.map(({ id, slug, title, name }) => ({
-      url: (slug && id) ? `/the-loai/${slug}/${id}` : '/the-loai',
-      title,
-      name,
-      active: (this.route.snapshot.params.slug === slug),
-    }));
-    this.categories = dummyCategories.map(({ id, slug, title, name }) => ({
-      url: (slug && id) ? `/the-loai/${slug}/${id}` : '/the-loai',
-      title,
-      name,
-      active: (this.route.snapshot.params.slug === slug && this.route.snapshot.params.categoryId === id),
-    }));
+    this.list = dummyList.map((v) => {
+      const clone = Object.assign(v);
+      const {slug, id} = v;
+      clone.url = (slug && id) ? `/the-loai/${slug}/${id}` : '/the-loai';
+      clone.active = (this.route.snapshot.params.slug === slug);
+      return clone;
+    });
+    this.categories = dummyCategories.map((v) => {
+      const clone = Object.assign(v);
+      const {slug, id} = v;
+      clone.url = (slug && id) ? `/the-loai/${slug}/${id}` : '/the-loai';
+      clone.active = (this.route.snapshot.params.slug === slug && this.route.snapshot.params.categoryId === id);
+      return clone;
+    });
     this.currentCategory = [...dummyList, ...dummyCategories].find(v => this.route.snapshot.params.slug === v.slug);
   }
 
-  ngOnChanges() {
-    console.log('aaaaaaaaaaaaaaa');
+  onClickLink(data) {
+    this.list = this.list.map(v => { v.active = false; return v; });
+    this.categories = this.categories.map(v => { v.active = false; return v; });
+    this.currentCategory = data;
   }
 }

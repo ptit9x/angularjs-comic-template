@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule],
   providers: []
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

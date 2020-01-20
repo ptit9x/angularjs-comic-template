@@ -21,6 +21,10 @@
               <h3 class="font-title">
                 <a [routerLink]="item.url" class="name-book ellipsis-1" [title]="item.title">{{item.title}}</a>
               </h3>
+              <p class="zl" *ngIf="item.rate">
+                <span>Đánh giá: </span>
+                <span class="mh-star-line star-{{item.rate}}"></span>
+              </p>
               <h4 class="show-author">
                 <a [routerLink]="item.authorUrl" class="name-author ellipsis-1" [title]="item.authorTitle">{{ item.author }}</a>
               </h4>
