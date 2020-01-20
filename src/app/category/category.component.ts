@@ -85,10 +85,4 @@ export class CategoryComponent implements OnInit {
     });
     this.currentCategory = [...dummyList, ...dummyCategories].find(v => this.route.snapshot.params.slug === v.slug);
   }
-
-  onClickLink(data) {
-    this.list = this.list.map(v => { v.active = false; return v; });
-    this.categories = this.categories.map(v => { v.active = false; return v; });
-    this.currentCategory = data;
-  }
 }
