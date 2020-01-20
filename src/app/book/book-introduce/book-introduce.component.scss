@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .box-content-des-info {
   float: left;
   width: 100%;
@@ -45,7 +47,7 @@
   text-align: center;
   padding: 10px 0;
   .content-readmore {
-    color: #bb3129;
+    color: $primary-color;
     font-size: 13px;
     cursor: pointer;
   }

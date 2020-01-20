@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .box-full-book {
   overflow: hidden;
   margin: 20px 0;
@@ -98,7 +100,7 @@
   transition: border-color 200ms ease;
   margin-right: 10px;
   color: #ffffff;
-  background: #bb3129;
+  background: $primary-color;
   text-decoration: none !important;
 }
 
@@ -131,6 +133,6 @@
     width: 100%;
     padding: 5px 0;
     background: none;
-    color: #bb3129;
+    color: $primary-color;
   }
 }

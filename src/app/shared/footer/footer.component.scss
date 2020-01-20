@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .footer {
   overflow: hidden;
   width: 100%;
@@ -30,7 +32,7 @@
     }
     a:hover {
       color: #ffffff;
-      background: #bb3129;
+      background: $primary-color;
       text-decoration: none;
     }
     .des-info {
@@ -49,7 +51,7 @@
       }
       a:hover {
         border: none;
-        color: #bb3129;
+        color: $primary-color;
         background: none;
       }
     }
@@ -77,7 +79,7 @@
       margin: 0 10px;
     }
     a:hover {
-      color: #bb3129;
+      color: $primary-color;
     }
   }
   p {

@@ -1,3 +1,4 @@
+@import "../../assets/theme/theme-variables";
 .error-page {
   width: 100%;
   background: #ffffff;
@@ -16,7 +17,7 @@
       width: 100%;
       display: block;
       font-size: 31px;
-      color: #bb3129;
+      color: $primary-color;
       margin-bottom: 20px;
     }
     p {
@@ -24,7 +25,7 @@
       line-height: 1.6;
       a {
         font-size: 13px;
-        color: #bb3129;
+        color: $primary-color;
         font-weight: 400;
       }
       a:hover {

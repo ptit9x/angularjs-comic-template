@@ -5,16 +5,6 @@
 // Set Font Awesome font path
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
-// ---------------------------------------------------------------------------
-// Bootstrap variables
-//
-// Override Bootstrap variables here to suite your theme.
-// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
-
-//
-// Color system
-//
-
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -27,29 +17,25 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
-$blue: #0073dd;
-$indigo: #6610f2;
-$purple: #6f42c1;
-$pink: #e83e8c;
-$red: #dc3545;
-$orange: #fd7e14;
-$yellow: #ffc107;
-$green: #28a745;
-$teal: #20c997;
-$cyan: #17a2b8;
+// $reading-hover: #d65149;
+// $title-gradient-right: #f45c43;
+// $title-gradient-left: #eb3349;
+// $primary-color: #bb3129;
+// $secondary-color: #9f224e;
+// $active-color: #a6150c;
 
-$theme-colors: (
-  primary: $blue,
-  secondary: $gray-600,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-100,
-  dark: $gray-800
-);
+// $reading-hover: #9ccc65;
+// $title-gradient-right: #8bc34a;
+// $title-gradient-left: #7cb342;
+// $primary-color: #689f38;
+// $secondary-color: #558b2f;
+// $active-color: #33691e;
 
-// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
-// in components.
-@import "~bootstrap/scss/_functions";
-@import "~bootstrap/scss/_variables";
+$reading-hover: #80cbc4;
+$title-gradient-right: #4db6ac;
+$title-gradient-left: #26a69a;
+$primary-color: #009688;
+$secondary-color: #00897b;
+$active-color: #00796b;
+
+

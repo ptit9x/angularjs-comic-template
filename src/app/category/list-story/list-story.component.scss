@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .box-cate-list ul {
   float: left;
   display: grid;
@@ -58,8 +60,8 @@
 }
 .cate-header-title .box-list-filter .link-cate-filter a.activelink,
 .link-cate-filter a:hover {
-  border-bottom: #bb3129 solid 3px;
-  color: #bb3129;
+  border-bottom: $primary-color solid 3px;
+  color: $primary-color;
 }
 .box-cate-list {
   padding: 0 10px;
@@ -199,7 +201,7 @@
 }
 .box-cate-list ul li .box-book-info .list-chapter .item-chapter a:hover {
   color: #ffffff;
-  background: #bb3129;
+  background: $primary-color;
   text-decoration: none !important;
 }
 .box-cate-list ul li .box-book-info .list-chapter .item-chapter .time-update {

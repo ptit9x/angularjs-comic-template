@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .title-book-author {
   float: left;
   padding: 0 15px;
@@ -12,7 +14,7 @@
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  border-bottom: #bb3129 solid 2px;
+  border-bottom: $primary-color solid 2px;
   padding: 10px 0;
 }
 

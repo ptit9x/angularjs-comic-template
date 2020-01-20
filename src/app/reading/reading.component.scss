@@ -1,3 +1,5 @@
+@import "../../assets/theme/theme-variables";
+
 a {
   cursor: pointer;
 }
@@ -51,7 +53,7 @@ a {
   line-height: 24px;
 }
 .read-breadcrumb .breadcrumb-content a:hover {
-  color: #9f224e;
+  color: $secondary-color;
 }
 .read-breadcrumb .breadcrumb-content i {
   float: left;
@@ -66,7 +68,7 @@ a {
   padding: 0 0 20px 0;
   font-weight: 500;
   font-size: 24px;
-  color: #9f224e;
+  color: $secondary-color;
 }
 
 .reading .top-button {
@@ -95,7 +97,7 @@ a {
   margin: 0 3px;
   display: inline-block;
   text-transform: uppercase;
-  background: #bb3129;
+  background: $primary-color;
   line-height: 40px;
   text-align: center;
   color: #ffffff;
@@ -117,8 +119,7 @@ a {
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
-  -webkit-backface-visibility: hidden;
-  background: #bb3129;
+  background: $primary-color;
 }
 .reading .top-button .btn-chapter-pre.disable,
 .reading .top-button .btn-chapter-next.disable {
@@ -128,7 +129,7 @@ a {
 .reading .top-button .btn-chapter-pre:focus,
 .reading .top-button .btn-chapter-next:hover,
 .reading .top-button .btn-chapter-next:focus {
-  background: #d65149;
+  background: $reading-hover;
 }
 .reading .top-button a.btn-chapter-pre:before {
   content: "\e905";
@@ -188,7 +189,7 @@ a {
 }
 .right-control-action .list-menu-action a:hover,
 .right-control-action .list-menu-action a.active {
-  background: #bb3129;
+  background: $primary-color;
 }
 .right-control-action .list-menu-action a.btn-chapter-pre:before {
   content: "\e905";
@@ -232,7 +233,7 @@ a {
   width: 100%;
   border-bottom: #f0f0f0 solid 2px;
   height: 54px;
-  border-bottom: #bb3129 solid 2px;
+  border-bottom: $primary-color solid 2px;
 }
 .list-tab a {
   float: left;
@@ -342,7 +343,7 @@ a {
 }
 .right-show-fun .read-popup-chapter .list-item-chapter ul li a:hover,
 .right-show-fun .read-popup-chapter .list-item-chapter ul li a.active {
-  color: #bb3129;
+  color: $primary-color;
 }
 .right-show-fun .read-popup-chapter .list-item-chapter ul li a i {
   float: left;
@@ -409,8 +410,8 @@ a {
 }
 .list-control-fun .group-fun .list-field-select .linkfun:hover,
 .list-control-fun .group-fun .list-field-select .linkfun.active {
-  border: #bb3129 solid 1px;
-  color: #bb3129;
+  border: $primary-color solid 1px;
+  color: $primary-color;
 }
 .list-control-fun .group-fun .list-field-select .fzsmall {
   float: left;
@@ -451,8 +452,8 @@ a {
 }
 .list-control-fun .group-fun .list-field-select .fzsmall:hover,
 .list-control-fun .group-fun .list-field-select .fzbig:hover {
-  color: #bb3129;
-  border: #bb3129 solid 1px;
+  color: $primary-color;
+  border: $primary-color solid 1px;
 }
 
 .reading .chapter-control {
@@ -544,7 +545,7 @@ a {
   cursor: pointer;
   font-size: 13px;
   margin: 0px 0px 0px 0px;
-  color: #9f224e;
+  color: $secondary-color;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -553,7 +554,7 @@ a {
   content: "\e958";
   font-family: "truyenn" !important;
   font-size: 16px;
-  color: #9f224e;
+  color: $secondary-color;
 }
 .fun_search_chapter .b-search-cancel {
   position: absolute;
@@ -595,7 +596,7 @@ a.btn-setting:before {
   vertical-align: middle;
 }
 a.btn-setting.active {
-  color: #bb3129;
+  color: $primary-color;
 }
 a.btn-setting.active:hover {
   color: #ff0000;
@@ -663,7 +664,7 @@ a.btn-setting.active:hover {
 }
 .style-graygold .btn-search,
 .style-graygold .right-show-fun .read-popup-chapter .btn-close {
-  color: #9f224e;
+  color: $secondary-color;
 }
 .style-graygold .fun_search_chapter {
   background: url("../../assets/images/noise-y_2x.7fb10.png") repeat;
@@ -675,7 +676,7 @@ a.btn-setting.active:hover {
   background: none;
 }
 .style-graygold .fun_search_chapter .b-search-cancel {
-  color: #9f224e;
+  color: $secondary-color;
   font-size: 12px;
 }
 .style-graygold .list-control-fun .group-fun .left-title {
@@ -1033,8 +1034,8 @@ body.w1280 .readcontent .top-page-right {
 }
 .list-control-fun .group-fun .list-field-select .linkBgColor:hover,
 .list-control-fun .group-fun .list-field-select .linkBgColor.active {
-  border: #bb3129 solid 1px;
-  color: #bb3129;
+  border: $primary-color solid 1px;
+  color: $primary-color;
 }
 .list-control-fun .group-fun .list-field-select .linkBgColor.active::before {
   content: "\e90b";

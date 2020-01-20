@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "./assets/theme/theme-variables";
 html,
 body,
 div,
@@ -109,10 +110,10 @@ body {
   color: #212121;
 }
 .link-main-color:hover {
-  color: #bb3129;
+  color: $primary-color;
 }
 .color-output-data {
-  color: #bb3129;
+  color: $primary-color;
 }
 
 .link-sblue {
@@ -223,7 +224,7 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 select:focus,
 .uneditable-input:focus {
-  border-color: #bb3129;
+  border-color: $primary-color;
 }
 .form-control {
   background-color: #fff;
@@ -347,7 +348,7 @@ td {
 }
 .btn-action {
   text-decoration: none;
-  background: #bb3129;
+  background: $primary-color;
   color: #fff;
   font-size: 13px;
   padding: 8px 15px;
@@ -366,16 +367,16 @@ td {
 }
 .btn-action:hover,
 .btn-action:focus {
-  background: #d65149;
+  background: $reading-hover;
 }
 .btn-action:active {
-  background: #a9241c;
+  background: $secondary-color;
 }
 .btn-boder-action {
   text-decoration: none;
   background: #fff;
-  border: #bb3129 solid 1px;
-  color: #bb3129;
+  border: $primary-color solid 1px;
+  color: $primary-color;
   font-size: 13px;
   padding: 9px 15px;
   text-shadow: none;
@@ -393,11 +394,11 @@ td {
 }
 .btn-boder-action:hover,
 .btn-boder-action:focus {
-  background: #d65149;
+  background: $reading-hover;
   color: #fff;
 }
 .btn-boder-action:active {
-  background: #a9241c;
+  background: $primary-color;
 }
 .status-chapter {
   color: #f00;
@@ -450,7 +451,7 @@ body .wrap .container {
   position: absolute;
   left: 0;
   margin-right: 20px;
-  background: #bb3129;
+  background: $primary-color;
   text-align: center;
   vertical-align: middle;
 }
@@ -458,11 +459,11 @@ body .wrap .container {
   font-size: 18px;
   width: 36px;
   height: 36px;
-  background: #eb3349;
-  background: -webkit-linear-gradient(left, #eb3349 40%, #f45c43);
-  background: -o-linear-gradient(right, #eb3349 40%, #f45c43);
-  background: -moz-linear-gradient(right, #eb3349 40%, #f45c43);
-  background: linear-gradient(to right, #eb3349 40%, #f45c43);
+  background: $title-gradient-left;
+  background: -webkit-linear-gradient(left, $title-gradient-left 40%, $title-gradient-right);
+  background: -o-linear-gradient(right, $title-gradient-left 40%, $title-gradient-right);
+  background: -moz-linear-gradient(right, $title-gradient-left 40%, $title-gradient-right);
+  background: linear-gradient(to right, $title-gradient-left 40%, $title-gradient-right);
   color: #fff;
   position: relative;
   margin-right: 16px;
@@ -484,7 +485,7 @@ body .wrap .container {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #f45c43;
+  border-left: 5px solid $title-gradient-right;
   position: absolute;
   left: 100%;
   top: 50%;
@@ -503,7 +504,7 @@ body .wrap .container {
 }
 .name-book:hover,
 .name-book.active {
-  color: #bb3129;
+  color: $primary-color;
 }
 .name-author {
   font-size: 12px;
@@ -516,7 +517,7 @@ body .wrap .container {
 }
 .name-author:hover,
 .name-author.active {
-  color: #bb3129;
+  color: $primary-color;
 }
 .name-chapter {
   font-size: 12px;
@@ -585,7 +586,7 @@ body .wrap .container {
 }
 .tile-main-title .box-txt-show.noicon h2,
 .tile-main-title .box-txt-show.noicon h3 {
-  border-bottom: #bb3129 solid 0;
+  border-bottom: $primary-color solid 0;
 }
 .tile-main-title .box-txt-show h2,
 .tile-main-title .box-txt-show h3 {
@@ -724,7 +725,7 @@ body .wrap .container {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  border-bottom: #bb3129 solid 2px;
+  border-bottom: $primary-color solid 2px;
   padding: 10px 0;
 }
 
@@ -763,7 +764,7 @@ body .wrap .container {
 }
 .navbar-menu .left-menu li:hover,
 .navbar-menu .left-menu li.active {
-  background: #a6150c;
+  background: $active-color;
 }
 .navbar-menu .left-menu li:hover .mainmenu-topbar {
   display: block;
@@ -821,7 +822,7 @@ body .wrap .container {
 }
 .navbar-menu .main-menu-more .menu-show-full-cate ul li a:hover {
   background: none;
-  color: #bb3129;
+  color: $primary-color;
 }
 .navbar-menu .main-menu-more .menu-show-full-cate ul li {
   float: left;
@@ -848,9 +849,9 @@ body .wrap .container {
 }
 .navbar-menu .main-menu-more .menu-show-full-cate ul li a:hover,
 .navbar-menu .main-menu-more .menu-show-full-cate ul li a.active {
-  color: #bb3129;
-  border-bottom: #bb3129 solid 2px;
-  color: #bb3129;
+  color: $primary-color;
+  border-bottom: $primary-color solid 2px;
+  color: $primary-color;
 }
 .navbar-menu .main-menu-more .menu-show-full-cate ul.boder-bottom {
   border-bottom: #ccc solid 1px;
@@ -882,7 +883,7 @@ body .wrap .container {
   float: left;
   font-size: 14px;
   margin-right: 8px;
-  color: #9f224e;
+  color: $secondary-color;
 }
 .navbar-breadcrumb a {
   line-height: 36px;
@@ -1067,7 +1068,7 @@ body .wrap .container {
 
 .book-doctruyen .doctruyen-item .box-book-info .name-chapter:hover {
   color: #ffffff;
-  background: #bb3129;
+  background: $primary-color;
   text-decoration: none !important;
 }
 .book-doctruyen .doctruyen-item .box-book-info .time-update {
@@ -1077,7 +1078,7 @@ body .wrap .container {
 }
 .book-chart ul li .box-book-info .list-chapter .item-chapter a:hover {
   color: #ffffff;
-  background: #bb3129;
+  background: $primary-color;
   text-decoration: none !important;
 }
 .book-chart ul li .box-book-info .list-chapter .item-chapter .time-update {
@@ -1119,13 +1120,13 @@ body .wrap .container {
 .ratingSelector input:checked ~ label, /* show gold star when clicked */
 .ratingSelector label:hover, /* hover current star */
 .ratingSelector label:hover ~ label {
-  color: #bb3129;
+  color: $primary-color;
 }
 .ratingSelector input:checked + label:hover, /* hover current star when changing rating */
 .ratingSelector input:checked ~ label:hover,
 .ratingSelector label:hover ~ input:checked ~ label, /* lighten current selection */
 .ratingSelector input:checked ~ label:hover ~ label {
-  color: #bb3129;
+  color: $primary-color;
 }
 .ratingSelector {
   float: left;
@@ -1184,12 +1185,12 @@ body .wrap .container {
   border-radius: 3px;
 }
 .box-page-view a:hover {
-  border: #bb3129 solid 1px;
+  border: $primary-color solid 1px;
 }
 .box-page-view a.active {
   color: #ffffff;
-  background: #bb3129;
-  border: #bb3129 solid 1px;
+  background: $primary-color;
+  border: $primary-color solid 1px;
 }
 .box-page-view.page-chapter {
   float: left;
@@ -1653,7 +1654,7 @@ body .wrap .container {
     padding: 0 40px;
   }
   .error-page .box-search-error .b-box-search-error:hover {
-    background: #a6150c;
+    background: $active-color;
   }
 }
 

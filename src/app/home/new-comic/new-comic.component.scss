@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .box-book-update {
   float: left;
   width: 100%;
@@ -96,7 +98,7 @@
 }
 .box-book-update ul li .box-book-info .list-chapter .item-chapter a:hover {
   color: #ffffff;
-  background: #bb3129;
+  background: $primary-color;
   text-decoration: none !important;
 }
 .box-book-update ul li .box-book-info .list-chapter .item-chapter .time-update {

@@ -1,3 +1,5 @@
+@import "../../../assets/theme/theme-variables";
+
 .detail-top {
   float: left;
   width: 100%;
@@ -12,7 +14,7 @@
   line-height: 24px;
 }
 .detail-top a:hover {
-  color: #9f224e;
+  color: $secondary-color;
 }
 .detail-top i {
   float: left;
@@ -27,7 +29,7 @@
   padding: 0 0 20px 0;
   font-weight: 500;
   font-size: 24px;
-  color: #9f224e;
+  color: $secondary-color;
 }
 .detail-header {
   float: left;
@@ -145,7 +147,7 @@
 }
 .detail-header .book-list-field .l-book-list-field .info-book .r-if-book a:hover {
   font-size: 14px;
-  color: #9f224e;
+  color: $secondary-color;
 }
 .detail-header .book-list-field .l-book-list-field .btn-list-action {
   float: left;
@@ -171,7 +173,7 @@
   font-weight: 600;
   padding: 5px 0 5px 0;
   text-align: center;
-  color: #bb3129;
+  color: $primary-color;
 }
 .detail-header .txt-data-sum-rating {
   float: left;
@@ -201,7 +203,7 @@
 .detail-header .saveToMyBookcase:after {
   content: "\e934";
   font-family: "truyenn" !important;
-  color: #bb3129;
+  color: $primary-color;
   font-size: 27px;
 }
 .detail-header .saveToMyBookcase.active:after {
@@ -249,7 +251,7 @@
   content: "";
   width: 4px;
   height: 4px;
-  background: #bb3129;
+  background: $primary-color;
   float: left;
   margin: 6px 5px 0 0;
   -webkit-border-radius: 2px;
@@ -257,7 +259,7 @@
   border-radius: 2px;
 }
 .detail-header .list-new-chapter ul li a:hover {
-  color: #9f224e;
+  color: $secondary-color;
 }
 @media (max-width: 1199px) {
   .detail-top {
